@@ -65,7 +65,73 @@
 body {
     font-size: 13px;
     font-family: var(--ff-manrope);
+	color: var(--clr-dark-grayish-blue);
+
+    display: grid;
+    gap: 10px;
+    min-height: 100vh;
+    place-content: center;
+    margin: 1.5rem;
+	background: var(--clr-light-grayish-blue);
 }
+
+.preview {
+	display: grid;
+	background: white;
+	border-radius: .75rem;
+	overflow: hidden;
+	max-width: 850px;
+}
+
+.preview__content {
+	padding: 2rem 2rem 1.25rem 2rem;
+}
+
+.preview__captions {
+	font-size: 1rem;
+}
+
+.preview__description {
+	color: var(--clr-desaturated-dark-blue);
+	font-weight: var(--fw-500);
+	font-size: .83rem;
+	margin-top: .8rem;
+}
+
+.preview__other-information {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.preview__author-container {
+	display: flex;
+}
+
+.preview__author-avatar {
+	border-radius: 50%;
+	width: auto;
+	height: 2.5rem;
+}
+
+.preview__author-information {
+	margin-left: 1rem;
+}
+
+.preview__author {
+	font-size: .8rem;
+}
+
+.preview__date {
+	color: var(--clr-grayish-blue);
+}
+
+
+
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -23,9 +23,7 @@
 <body>
 	<main>
 		<article class="preview">
-			<picture class="preview__img">
-				<img src="./images/drawers.jpg" alt="Torquise Desk Furniture">
-			</picture>
+			<img class="preview__img" src="./images/drawers.jpg" alt="Torquise Desk Furniture">
 
 			<div class="preview__content">
 				<h1 class="preview__captions">Shift the overall look and feel 
@@ -36,23 +34,42 @@
 				I've got some simple tips to help you make any room feel complete.</p>
 
 				<div class="preview__other-information">
-					<div class="preview__author-information">
-						<img src="./images/avatar-michelle.jpg" alt="Michelle's Avatar">
-						<h2 class="preview__author">Michelle Appleton</h2>
-						<p class="preview__date">28 Jun 2020</p>	
+					<div class="preview__author-container">
+						<div>
+							<img class="preview__author-avatar" src="./images/avatar-michelle.jpg" alt="Michelle's Avatar">
+						</div>
+							
+						<div class="preview__author-information">
+							<h2 class="preview__author">Michelle Appleton</h2>
+							<p class="preview__date">28 Jun 2020</p>	
+						</div>
 					</div>
-
-					<button class="share-button"></button>
-				</div>
+					<!-- Container that displays social media share options 
+					<div class="preview__share-container">
+						<div class="share-container__icons-container">
+							<p class="share-container__text">SHARE</p>
+							<a href="#">
+								<img src="./images/icon-facebook.svg" alt="Facebook Icon">
+							</a>
+							<a href="#">
+								<img src="./images/icon-twitter.svg" alt="Twitter Icon">
+							</a>
+							<a href="#">
+								<img src="./images/icon-pinterest.svg" alt="Pinterest Icon">
+							</a>
+						</div>
+					</div>
+					-->
 					
-				Share
+					<!-- Share icon, click on this to expand share options -->
+					<div class="preview__desktop-button">
+						<img src="./images/icon-share.svg" alt="Share Icon">
+					</div>
+				</div>
 			</div>
 		</article>
 	</main>
 
-	<div class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
-	</div>
+	
 </body>
 </html>
