@@ -80,7 +80,6 @@ body {
 	background: white;
 	border-radius: .75rem;
 	max-width: 800px;
-	overflow: hidden;
 }
 
 .preview__content {
@@ -137,7 +136,24 @@ body {
 	justify-content: center;
 	border-style: none;
 	margin-left: 8em;
+
+	transition: background-color 0.3s ease;
 }
+
+.preview__desktop-button:hover {
+	cursor: pointer;
+	background: var(--clr-dark-grayish-blue);
+}
+
+.preview__desktop-button svg path {
+    transition: fill 0.3s ease;
+}
+
+.preview__desktop-button:hover svg path {
+    fill: var(--clr-light-grayish-blue); /* Replace with your desired color variable */
+}
+
+
 
 .preview__share {
 	position: relative;
@@ -153,23 +169,38 @@ body {
 	display: grid;
 	padding: 0 1rem 0 1rem;
 
-	width: 225px;
+	width: 235px;
 	height: 52px;
+}
 
-	
+.preview__share-container {
+    position: absolute;
+    top: -75px; 
+    left: 70%;
+    transform: translateX(-40%);
+    display: none;
+}
+
+.preview__share-container[open] {
+	display: grid;
+    align-items: center;
+    flex-direction: column;
 }
 
 .share-container__triangle {
-	border-left: 1rem solid transparent;
-	border-right: 1rem solid transparent;
-	border-top: 1rem solid var(--clr-dark-grayish-blue);
+	position: absolute;
+    bottom: -10px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid var(--clr-dark-grayish-blue);
 }
 
 .share-container__icons-container {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 }
 
 @media (min-width: 700px) {
